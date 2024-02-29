@@ -1,0 +1,7 @@
+// usage: #import "author.tym"
+// #let default = (first: "Mike", last: "Carifio", email: "mike@carif.io", tel: "+1-978-377-8680")
+// #let self=(:)
+// #let init(overrides) = { let self = overrides; }
+#let name(d) = [#d.at("first", "Unknown"), #d.at("last", "Unknown")]
+#let contact(d) = [#name(d) <#d.at("email", "unknown")>]
+#let dump(d) = { for (k,v) in d { [#k: #v, ]; } }

@@ -1,9 +1,9 @@
-// #import "/usr/share/pandoc-3.1.3/data/templates/template.typst": *
-// #show: project.with(
-//  title: "first.typ",
-//  authors: ((name: "Mike Carifio", email: "mike@carif.io"), ),
-// )
+// #import "first.tym"
+#import "author.tym"
+#let me = (first: "Mike", last: "Carifio", email: "mike@carif.io", tel: "+1-978-377-8680")
+#author.dump(me)
 
 = Start Here
 
-First sentence.
+First sentence from #author.name(me) reached at #author.contact(me).
+
