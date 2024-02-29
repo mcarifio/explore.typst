@@ -1,0 +1,20 @@
+# typst generated
+*.pdf
+*.png
+*.svg
+*.html
+out/**
+
+# logs
+*.log
+
+# "set aside" directories
+**/.attic/**
+
+# archives
+*.zip
+*.xz
+*.txz
+*.gz
+*.tgz
+
